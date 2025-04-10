@@ -1,0 +1,26 @@
+@media print {
+  /* Ensure proper page breaks */
+  .resumeContainer {
+    page-break-before: auto;
+    page-break-after: always;
+    overflow: hidden;
+  }
+
+  .resume {
+    width: 210mm;
+    height: 297mm;
+    page-break-inside: avoid;
+    break-after: always;
+  }
+
+  /* Prevent sections from breaking across pages */
+  .section {
+    page-break-inside: avoid;
+  }
+
+  /* Apply the background image consistently on every page */
+  .resume {
+    background-size: cover;
+    background-position: center;
+  }
+}

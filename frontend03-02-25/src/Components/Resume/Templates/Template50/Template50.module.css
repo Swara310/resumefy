@@ -1,0 +1,165 @@
+/* Resume Container */
+.resumeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8f4ff; /* Light Blue Background */
+}
+
+/* Resume */
+.resume {
+    display: flex;
+    width: 900px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background: #a3d5ff;
+    color: black;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.profile p {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact {
+    border-bottom: 1px solid rgb(224, 223, 223); 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+    /* padding: 8px 12px; */
+}
+
+/* Contact */
+.contact p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.contact a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Skills & Languages */
+.skillsList, .languagesList, .otherSection {
+    list-style: none;
+    padding: 0;
+}
+
+.skillsList li, .languagesList li, .otherSection p {
+    background: white;
+    color: #007acc;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Main Content */
+.mainContent {
+    width: 70%;
+    padding: 30px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: #a3d5ff;
+    border-radius: 5px;
+}
+
+/* List Items with Custom Bullets */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: black;
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: "•";
+    color: #007acc;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 10px;
+}
+
+.project h4 {
+    font-size: 16px;
+    color: black;
+}
+
+.project a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Printing Styles */
+@media print {
+    body {
+        background: white;
+    }
+    .resumeContainer {
+        background: white;
+        padding: 0;
+    }
+    .resume {
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+    }
+    .sidebar {
+        border-radius: 0;
+    }
+}

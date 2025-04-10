@@ -1,0 +1,128 @@
+.resume {
+    display: flex;
+    width: 210mm;
+    height: 297mm;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px;
+    --theme-color: #283593;
+  }
+  .resumeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Left Column */
+  .leftColumn {
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  /* Circle for Initial */
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .bigLetter {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  /* Socials */
+  .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+  }
+  
+  .socials p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+  
+  
+  /* Sections */
+  .section h3 {
+    font-size: 18px;
+    color: var(--theme-color);
+    border-bottom: 2px solid var(--theme-color);
+    padding-bottom: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Elliptical Skills & Languages */
+  .ellipticalContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .ellipticalBox {
+    background-color: white;
+    color: var(--theme-color);
+    border: 1px solid var(--theme-color);
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  /* Right Column */
+  .rightColumn {
+    width: 70%;
+    padding: 20px;
+  }
+  
+  .rightColumn h1 {
+    font-size: 28px;
+    color: var(--theme-color);
+  }
+  
+  .rightColumn h2 {
+    font-size: 20px;
+    color: #6a6a6a;
+  }
+  
+  .rightColumn h3 {
+    font-size: 18px;
+    color: var(--theme-color);
+  }
+  
+
+  /* Dotted Separator Line (Between Sections) */
+.dottedLine {
+    border: none;
+    border-top: 2px dotted var(--theme-color);
+    margin: 20px 0;
+  }
+  
+  /* Vertical Dotted Line (Between Left & Right Columns) */
+  .verticalDottedLine {
+    border-left: 2px dotted var(--theme-color);
+    height: 100%;
+    align-self: stretch;
+  }
+  

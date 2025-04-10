@@ -1,0 +1,95 @@
+.resumeWrapper {
+  display: flex;
+  margin-left: 30%;
+  margin-top: 8%;
+  width: 210mm;
+  height: 287mm;
+  font-size: 12px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.leftSection {
+  width: 30%;
+  background: linear-gradient(135deg, var(--theme-color), #000000);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leftSection h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.leftSection h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.leftSection h3 {
+  border-bottom: 1px solid #f9f3f3f9;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.leftSection a {
+  color: rgb(32, 215, 215);
+}
+
+.leftSection p {
+  color: rgb(44, 213, 213);
+}
+
+.bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.bubbles span {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  border: 1px solid #ffffff55;
+}
+
+.rightSection {
+  width: 70%;
+  padding: 20px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rightSection .section h3 {
+  font-size: 14px;
+  color: var(--theme-color);
+  border-bottom: 2px solid var(--theme-color);
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.rightSection .section p,
+.rightSection .section div {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.rightSection ul {
+  padding-left: 18px;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.rightSection li {
+  margin-bottom: 4px;
+}

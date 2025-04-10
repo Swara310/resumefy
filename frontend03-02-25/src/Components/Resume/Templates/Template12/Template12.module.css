@@ -1,0 +1,100 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+  width: 210mm;
+  background: white;
+  padding: 25px; /* Reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --theme-color: #283593;
+  font-size: 12px; /* Reduced overall font size */
+}
+
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.name {
+  font-size: 20px; /* Reduced size */
+  color: var(--theme-color);
+  font-weight: bold;
+}
+
+.title {
+  font-size: 14px; /* Reduced size */
+  color: #555;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px; /* Reduced size */
+}
+
+.socials p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Two-Column Layout */
+.content {
+  display: flex;
+  gap: 15px; /* Reduced gap */
+}
+
+/* Left Column */
+.leftColumn {
+  width: 70%;
+  padding-right: 15px;
+  border-right: 1.5px dotted var(--theme-color); /* Slightly thinner */
+}
+
+/* Right Column */
+.rightColumn {
+  width: 30%;
+  padding-left: 15px;
+}
+
+/* Section Titles */
+.section h3 {
+  font-size: 14px; /* Reduced size */
+  color: var(--theme-color);
+  border-bottom: 1.5px solid var(--theme-color); /* Slightly thinner */
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+/* Work Experience, Projects, and Achievements */
+.section ul {
+  list-style-type: disc;
+  padding-left: 15px; /* Slightly reduced padding */
+  font-size: 12px; /* Smaller font size */
+}
+
+/* Skills & Languages Elliptical Styling */
+.skillContainer, .languageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px; /* Reduced gap */
+}
+
+.skillBubble, .languageBubble {
+  background: var(--theme-color);
+  color: white;
+  padding: 4px 10px; /* Smaller padding */
+  border-radius: 18px;
+  font-size: 10px; /* Reduced font size */
+}

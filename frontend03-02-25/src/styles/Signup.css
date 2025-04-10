@@ -1,0 +1,133 @@
+/* Signup Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 28px;
+  min-height: 100vh; /* For full-screen height on mobile */
+}
+
+.signup-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%; /* Adjusted for responsiveness */
+  margin: 10px; /* Adds spacing on smaller screens */
+}
+.signup-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+/* Error Message */
+.error-message {
+  color: red !important;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+.input-error {
+  border: 1px solid red !important;
+}
+
+/* Form Elements */
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #17a2b8;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Social Login Buttons */
+.social-login p {
+  color: #666;
+  margin-top: 20px;
+}
+
+.social-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn.google {
+  background-color: #db4437;
+  color: #fff;
+}
+
+.social-btn.apple {
+  background-color: #000;
+  color: #fff;
+}
+
+.social-btn.facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.social-btn:hover {
+  opacity: 0.9;
+}
+
+/* Redirect Link */
+.login-redirect {
+  margin-top: 20px;
+  color: #666;
+}
+
+.login-redirect span {
+  color: #0073e6;
+  cursor: pointer;
+}
+
+.login-redirect span:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .signup-card {
+    width: 60%;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .signup-card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .signup-card {
+    width: 40%;
+  }
+}

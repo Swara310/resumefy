@@ -1,0 +1,143 @@
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.479);
+  font-size: 21px;
+  --theme-color: #1976d2;
+}
+
+/* Header */
+.header {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--theme-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 20px;
+  color: #555;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 10px;
+}
+
+.socials p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #1976d2;
+}
+
+.socials a {
+  color: var(--theme-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.socials a:hover {
+  color: #0000009a;
+  transform: scale(1.1);
+}
+
+/* Section Styling */
+.section {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.section p {
+  color: #000000;
+  font-size: 18px;
+}
+
+.section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--theme-color);
+  border-bottom: 2px solid var(--theme-color);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Lists */
+.section ul {
+  list-style-type: square;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+/* Skills & Languages Elliptical Styling */
+.skills,
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillContainer,
+.languageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skillBubble,
+.languageBubble {
+  background: var(--theme-color);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.skillBubble:hover,
+.languageBubble:hover {
+  background: #000000;
+  transform: scale(1.05);
+}
+
+/* Project, Experience, Education, and Achievements Alignment */
+.project,
+.experience,
+.education,
+.other,
+.achievements {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.project ul,
+.experience ul,
+.education ul,
+.achievements ul {
+  padding-left: 25px;
+  font-size: 12px;
+  line-height: 1.5;
+}

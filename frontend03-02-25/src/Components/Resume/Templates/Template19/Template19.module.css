@@ -1,0 +1,112 @@
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  width: 210mm;
+    padding: 20px;
+  padding: 20px;
+  font-size: 12px;
+  
+}
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bold;
+  color:black;
+}
+
+.title {
+  font-size: 14px;
+  color: #000000;
+}
+
+/* Sections */
+.socialsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 5px; /* Reduce spacing */
+  text-align: center;
+}
+
+
+.section {
+  margin-top: 0px;
+  color: white;
+}
+
+.sectionTitle {
+  background-color:#fbdc6a;
+  color: rgb(0, 0, 0);
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Education Table */
+.educationTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+
+.educationTable th,
+.educationTable td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 4px;
+  font-size: 12px;
+}
+
+.educationTable th {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Work Experience */
+.workItem {
+  margin-top: 5px;
+}
+
+.workItem p {
+  margin: 2px 0;
+}
+
+/* Projects */
+.projectItem {
+  margin-top: 5px;
+}
+
+.projectItem ul {
+  padding-left: 15px;
+}
+
+.projectItem ul li {
+  font-size: 12px;
+}
+
+/* Achievements & Others */
+.section ul {
+  list-style-type: disc;
+  padding-left: 15px;
+  font-size: 12px;
+  color: white;
+}
+
+
+.section p{
+  color: white;
+}

@@ -1,0 +1,52 @@
+.how-to-write-cover-letter {
+    padding: 30px; /* Increased padding for better spacing */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f8f9fa; /* Light background for contrast */
+    border: 1px solid #17a2b8; /* Border with the specified shade */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .how-to-write-cover-letter h1 {
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 20px;
+    color: #17a2b8; /* Use the specified shade for the heading */
+    text-align: center; /* Centered title for better visual impact */
+  }
+  
+  .how-to-write-cover-letter ol {
+    padding-left: 0; /* Remove default padding */
+    list-style-type: none; /* Remove default bullet points */
+  }
+  
+  .how-to-write-cover-letter li {
+    margin-bottom: 15px;
+    position: relative; /* Positioning for pseudo-element */
+    padding-left: 25px; /* Padding for text alignment */
+  }
+  
+  /* Adding a decorative dot before each list item */
+  .how-to-write-cover-letter li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 8px; /* Size of the dot */
+    width: 8px; /* Size of the dot */
+    background-color: #17a2b8; /* Dot color */
+    border-radius: 50%; /* Circle shape */
+    margin-top: 10px; /* Align with the text */
+  }
+  
+  .how-to-write-cover-letter strong {
+    color: #17a2b8; /* Make strong text the specified color */
+    font-weight: bold; /* Ensure strong text is bold */
+  }
+  
+  .how-to-write-cover-letter li:last-child {
+    margin-bottom: 0; /* Remove margin from the last item */
+  }
+  

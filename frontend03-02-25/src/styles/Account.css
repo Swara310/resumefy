@@ -1,0 +1,105 @@
+/* Profile container styling */
+.profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Profile picture container */
+  .profile-pic-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #17a2b8;
+    object-fit: cover;
+  }
+  
+  .upload-button {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-button:hover {
+    background-color: #138496;
+  }
+  
+  /* Profile details styling */
+  .profile-details {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .profile-details label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .profile-details input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .profile-details input:focus {
+    border-color: #17a2b8;
+  }
+  
+  /* Save button styling */
+  .save-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .save-button:hover {
+    background-color: #138496;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .profile-container {
+      padding: 15px;
+    }
+    
+    .profile-details label {
+      font-size: 0.9rem;
+    }
+  
+    .save-button {
+      font-size: 1rem;
+    }
+  }
+  

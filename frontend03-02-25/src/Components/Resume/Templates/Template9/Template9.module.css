@@ -1,0 +1,148 @@
+.resumeContainer {
+    max-width: 210mm;
+    height: 297mm;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  header h2 {
+    font-size: 20px;
+    margin: 5px 0 15px;
+    color: var(--theme-color);
+  }
+  
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .contact a,
+  .contact span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .contact a:hover {
+    color: var(--theme-color);
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
+  
+  section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-left: 5px solid var(--theme-color);
+    padding-left: 10px;
+  }
+  
+  section ul {
+    padding-left: 20px;
+  }
+  
+  section li {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .skillsContainer,
+  .languagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .skillChip,
+  .languageChip {
+    background-color: var(--theme-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  
+  .project {
+    margin-bottom: 20px;
+  }
+  
+  .project h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .project p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .educationItem {
+    margin-bottom: 10px;
+  }
+  
+  .educationItem h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .educationItem p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .achievements ul,
+  .workExperience ul {
+    padding-left: 20px;
+  }
+  
+  .workExperience .job h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .workExperience .job ul {
+    list-style-type: disc;
+    margin: 5px 0 0;
+    padding-left: 20px;
+  }
+  
+  .summary p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .resumeContainer::after {
+    content: '';
+    display: block;
+    page-break-after: always; /* For proper A4 page break */
+  }
+  

@@ -1,0 +1,148 @@
+.resume-container {
+  display: flex;
+  max-width: 900px;
+  background: #fff;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: auto;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* Left Panel */
+.left-panel {
+  width: 65%;
+  padding-right: 20px;
+  border-right: 2px solid #ddd;
+  background-color: #799acc;
+}
+
+.name {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #2a56c6;
+  font-weight: bold;
+}
+
+.summary {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  border-bottom: 2px solid #2a56c6;
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.job-title,
+.degree-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.date {
+  font-weight: bold;
+  color: #2a56c6;
+  margin-bottom: 5px;
+}
+
+.institution {
+  font-size: 16px;
+  color: #555;
+}
+
+.job-list,
+.skill-list,
+.certification-list,
+.info-list {
+  padding-left: 20px;
+}
+
+.job-list li,
+.skill-list li,
+.certification-list li,
+.info-list li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Right Panel */
+.right-panel {
+  width: 35%;
+  padding-left: 20px;
+  background-color: #0e0e0e;
+
+  color: white;
+}
+
+.contact-info {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.contact-info a {
+  color: #2a56c6;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* .skill-category {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .skills ul {
+    padding-left: 20px;
+  }
+  
+  .skills li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  } */
+/* Add this to your stylesheet */
+.skill-item {
+  position: relative;
+  display: inline-block;
+  padding: 7px 14px;
+  font-size: 16px;
+  background-color: #b5e1ff;
+  border-radius: 9px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgb(0, 255, 136);
+  gap: 10px;
+}
+
+.skill-item:hover::before {
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}

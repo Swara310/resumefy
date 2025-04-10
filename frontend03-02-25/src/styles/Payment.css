@@ -1,0 +1,215 @@
+/* Payment Container */
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title */
+.pricing-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Statistics Section */
+.pricing-statistics {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.statistic {
+  text-align: center;
+}
+
+.statistic h2 {
+  font-size: 2rem;
+  color: #17a2b8;
+  margin: 0.5rem 0;
+}
+
+.statistic p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Pricing Plans */
+.pricing-plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2.5rem;
+}
+
+.plan {
+  width: 30%;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+  font-size: 1.4rem;
+  color: #17a2b8;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.plan p {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.price {
+  font-size: 1.8rem;
+  color: #ff6b6b;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.popular,
+.best-value {
+  border: 2px solid #17a2b8;
+  position: relative;
+}
+
+.popular::before,
+.best-value::before {
+  content: attr(data-label);
+  color: #fff;
+  background: #17a2b8;
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  position: absolute;
+  top: -1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Payment Form Styles */
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.card-label {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
+}
+
+.card-element {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+.card-element:focus {
+  border-color: #17a2b8;
+  outline: none;
+}
+
+.payment-button {
+  background-color: #17a2b8;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.payment-button:hover {
+  background-color: #128ea1;
+  transform: translateY(-2px);
+}
+
+.payment-button:disabled {
+  background-color: #ccc;
+}
+
+/* Success Message */
+.payment-success-message {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.payment-success-message h2 {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin-bottom: 0.5rem;
+}
+
+.payment-success-message p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .pricing-statistics, .pricing-plans {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .plan {
+      width: 80%;
+      margin: 1rem 0;
+  }
+
+  .pricing-title {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-container {
+      padding: 1rem;
+  }
+
+  .pricing-title {
+      font-size: 1.8rem;
+  }
+
+  .statistic h2 {
+      font-size: 1.5rem;
+  }
+
+  .payment-form {
+      width: 90%;
+  }
+}

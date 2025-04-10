@@ -1,0 +1,147 @@
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  margin: 0px;
+  gap: 5px;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  width: 210mm;
+  background: #112240;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 30px rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  --theme-color: #64ffda;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+/* Header */
+.header {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--theme-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 18px;
+  color: #ccd6f6;
+}
+
+/* Social Links */
+.socials {
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  align-items: flex-start; /* Align to the left */
+  gap: 4px;
+  font-size: 14px;
+}
+
+.socials p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 2px 0; /* Added a slight margin for balance */
+}
+
+.socials a {
+  color: var(--theme-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+  display: block; /* Ensure each link is on a new line */
+}
+
+.socials a:hover {
+  color: #ff4081;
+  transform: scale(1.05);
+}
+
+/* Section Styling */
+.section {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.section h3 {
+  font-size: 18px;
+  color: var(--theme-color);
+  border-bottom: 2px solid var(--theme-color);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Lists */
+.section ul {
+  list-style-type: square;
+  padding-left: 25px;
+  font-size: 12px;
+  color: #ccd6f6;
+}
+
+/* Skills & Languages Elliptical Styling */
+.skills,
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skillContainer,
+.languageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skillBubble,
+.languageBubble {
+  background: var(--theme-color);
+  color: #0a192f;
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.skillBubble:hover,
+.languageBubble:hover {
+  background: white;
+  color: #0a192f;
+  transform: scale(1.05);
+}
+
+/* Project, Experience, Education, and Achievements Alignment */
+.project,
+.experience,
+.education,
+.achievements {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.project ul,
+.experience ul,
+.education ul,
+.achievements ul {
+  padding-left: 25px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #ccd6f6;
+}

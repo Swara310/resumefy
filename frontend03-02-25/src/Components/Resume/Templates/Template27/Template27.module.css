@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+.resume {
+  display: flex;
+  flex-direction: row;
+  background-size: cover;
+  background-position: center;
+  max-width: 900px;
+  padding: 5px;
+  gap: 15px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Left Panel */
+
+.leftPanel {
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.leftPanel h1 {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.leftPanel h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.leftPanel h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.leftPanel a {
+  color: #2894ff;
+  text-decoration: none;
+}
+
+.leftPanel a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+/* Right Panel */
+.rightPanel {
+  width: 70%;
+  padding-top: 10px;
+  padding-left: 20px;
+  background: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.section h3 {
+  font-size: 18px;
+  background: #ffef9f;
+  color: rgb(0, 0, 0);
+  padding: 6px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+}
+
+/* Skills & Languages */
+.skillContainer,
+.languageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skillBubble,
+.languageBubble {
+  background: white;
+  border: 1px solid var(--theme-color);
+  border-radius: 15px;
+  padding: 6px 12px;
+  font-size: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.skillBubble:hover::after,
+.languageBubble:hover::after {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+/* Project list */
+.bulletList {
+  padding-left: 18px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bulletList li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+}

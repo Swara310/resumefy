@@ -1,0 +1,103 @@
+.coverContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .coverPage {
+    width: 210mm;
+    height: 297mm;
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .headerLeft {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .contactInfo span {
+    margin-bottom: 5px;
+  }
+  
+  .contactInfo a {
+    text-decoration: none;
+    color: #0073b1;
+    font-weight: bold;
+  }
+  
+  .contactInfo a:hover {
+    text-decoration: underline;
+  }
+  
+  .line {
+    width: 100%;
+    margin: 5px auto;
+    border: 1px solid black;
+  }
+  
+  .recipientSection {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .recipientSection p {
+    margin: 3px 0;
+
+  }
+  
+  .letterContent {
+    flex-grow: 1;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+    
+  }
+  
+  .footer {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .signature {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  

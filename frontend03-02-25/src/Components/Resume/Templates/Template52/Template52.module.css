@@ -1,0 +1,108 @@
+.resumeContainer {
+  display: flex;
+  border: 2px solid #ddd;
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  background-color: #f9f9f9;
+}
+
+.leftPanel {
+  width: 35%;
+  padding: 20px;
+  color: rgb(10, 9, 9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d77d4; /* Blue color as in the image */
+  text-align: center;
+}
+
+.rightPanel {
+  width: 65%;
+  padding: 20px;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.date {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.email,
+.phone,
+.location {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.skills,
+.education {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border-top: 2px solid white;
+  margin-top: 10px;
+}
+
+.skills ul,
+.education ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-icons a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-icons a:hover {
+  text-decoration: underline;
+}

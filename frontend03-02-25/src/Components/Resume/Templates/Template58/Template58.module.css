@@ -1,0 +1,88 @@
+.resumeWrapper {
+    display: flex;
+    border: 1px solid #ccc;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    background-color: #f8f8f8;
+  }
+  
+  .leftSection {
+    background-color: #7b1e20;
+    color: #fff;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .leftSection h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .leftSection h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .leftSection .section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .leftSection .section h3 {
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  
+  .leftSection p, .leftSection a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .leftSection .bubbles span {
+    display: inline-block;
+    background: #fff;
+    color: #7b1e20;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 3px;
+    font-size: 12px;
+  }
+  
+  .rightSection {
+    width: 70%;
+    padding: 30px;
+    background-color: #fff;
+  }
+  
+  .rightSection h3 {
+    color: #7b1e20;
+    font-size: 18px;
+    border-bottom: 2px solid #7b1e20;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  
+  .rightSection p, .rightSection li {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .rightSection ul {
+    padding-left: 20px;
+  }
+  
+  .rightSection strong {
+    color: #333;
+  }
+  
+  .rightSection div {
+    margin-bottom: 20px;
+  }

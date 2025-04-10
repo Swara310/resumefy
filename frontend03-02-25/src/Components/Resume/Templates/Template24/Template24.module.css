@@ -1,0 +1,177 @@
+@import "../multiPage.css"; /* Import global multipage handling */
+
+/* Main Resume Styles */
+.resume {
+  justify-content: center;
+  align-items: center;
+  width: 210mm;
+  background: white;
+  padding: 20px;
+  font-size: 12px;
+  --theme-color: #283593;
+  page-break-inside: avoid; /* Prevents section splitting */
+}
+
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--theme-color);
+  padding-bottom: 8px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: left;
+}
+
+
+.name {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--theme-color);
+}
+
+.title {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Social Links */
+.right p {
+  margin: 3px 0;
+  font-size: 12px;
+}
+
+.right a {
+  color: blue;
+  text-decoration: none;
+}
+
+.right a:hover {
+  text-decoration: underline;
+}
+
+/* Section Titles */
+.section {
+  margin-top: 10px;
+  page-break-inside: avoid;
+}
+.section h3 {
+  font-size: 17px;
+}
+
+
+.sectionTitle {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--theme-color);
+  border-bottom: 1px solid var(--theme-color);
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+/* Lists */
+.section ul {
+  list-style-type: disc;
+  padding-left: 15px;
+}
+
+/* Project Links */
+.projectLink {
+  font-weight: bold;
+  color: var(--theme-color);
+  text-decoration: none;
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+}
+
+/* Education Table */
+.educationTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.educationTable th,
+.educationTable td {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 4px;
+  font-size: 12px;
+}
+
+.educationTable th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/*skills and language*/
+.skills, .languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.skillContainer, .languageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px; /* Reduced gap */
+}
+
+.skillBubble, .languageBubble {
+  background: var(--theme-color);
+  color: white;
+  padding: 4px 10px; /* Smaller padding */
+  border-radius: 18px;
+  font-size: 10px; /* Reduced font size */
+}
+
+
+/*page break code snippet i used to break pages equally @Nikhil*/
+
+
+/* Ensure new pages start properly */
+.page-break {
+  page-break-before: always;
+  break-before: page;
+}
+
+/* Prevent Section Splitting */
+.section {
+  page-break-inside: avoid;
+}
+
+/* Multi-Page Handling */
+@media print {
+  
+  @page {
+    size: A4; /* DIN A4 standard, Europe */
+    margin: 0.25in;
+  }
+  .resumeContainer {
+    page-break-before: auto;
+    page-break-after: always;
+  }
+
+  .resume {
+    width: 210mm;
+    height: 297mm;
+    page-break-inside: avoid;
+    break-after: always;
+    padding: 6.35mm;
+  }
+}
+

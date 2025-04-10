@@ -1,0 +1,113 @@
+.resume {
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    background-position: center;
+    width: 210mm;
+    height: 297mm;
+    padding: 20px;
+    gap: 20px;
+    font-size: 12px;
+
+  }
+  .resumeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+  }
+  
+  /* Left Panel */
+
+  .leftPanel {
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .leftPanel h1 {
+    font-size: 30px;
+  }
+  
+  .leftPanel h2 {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  .leftPanel h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+  }
+  
+  .leftPanel a {
+    color: #0a66c2;
+    text-decoration: none;
+  }
+  
+  .leftPanel a:hover {
+    text-decoration: underline;
+  }
+
+  .section
+  {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Right Panel */
+  .rightPanel {
+    width: 70%;
+    padding: 20px;
+
+  }
+  
+  .section h3 {
+    font-size: 14px;
+    background: #eed8f8;
+    color: rgb(0, 0, 0);
+    padding: 6px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .section p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Skills & Languages */
+  .skillContainer,
+  .languageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .skillBubble,
+  .languageBubble {
+    background: white;
+    border: 1px solid var(--theme-color);
+    border-radius: 15px;
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+
+  /*project list*/
+  .bulletList {
+    padding-left: 18px; /* Indentation for bullets */
+    font-size: 12px; /* Consistent small font */
+    line-height: 1.5;
+  }
+  
+  .bulletList li {
+    list-style-type: disc; /* Regular bullet points */
+    margin-bottom: 5px; /* Spacing between items */
+  }
+  

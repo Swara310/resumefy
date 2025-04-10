@@ -1,0 +1,175 @@
+/* Main Resume Container */
+.resumeContainer {
+    display: flex;
+    width: 250mm; /* Increased width */
+    height: 360mm; /* Slightly increased height */
+    margin: 20px auto;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 25px;
+}
+
+/* Left Section (Profile, Skills, Contact) */
+.leftSection {
+    width: 38%;
+    background: #222;
+    color: #f5f7fa;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Profile - Name & Position */
+.profile {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.profile h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 22px;
+}
+
+/* Social Links */
+.socialLinks {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.socialLinks a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.socialLinks a:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles */
+.section {
+    margin-bottom: 35px;
+}
+
+.section h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+/* Skills Section */
+.section ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.section ul li {
+    background: #ffcc00;
+    color: #222;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contactSection {
+    background: #111;
+    padding: 28px;
+    border-radius: 8px;
+    text-align: left;
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* Increased width for Contact Info Box */
+.contactInfo {
+    font-size: 16px;
+    color: #fff;
+    margin: 10px auto;
+    text-align: center;
+    width: 99%; /* Slightly increased width */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Right Section */
+.rightSection {
+    width: 64%; /* Increased width */
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #333;
+}
+
+/* Section Titles */
+.rightSection h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    border-left: 6px solid #ffcc00;
+    padding-left: 14px;
+    margin-bottom: 25px;
+}
+
+/* Summary, Work History, Projects, Education */
+.summary p,
+.workHistory p,
+.projects p,
+.education p {
+    font-size: 17px;
+    margin-bottom: 18px;
+
+}
+
+/* Work Experience & Projects */
+.workItem,
+.projectItem {
+    margin-bottom: 30px;
+
+}
+
+.workItem ul,
+.projectItem ul {
+    padding-left: 22px;
+    list-style-type: disc;
+
+}
+
+/* Achievements */
+.achievements ul {
+    padding-left: 18px;
+    list-style-type: circle;
+}
+
+/* Responsive for Print */
+@media print {
+    .resumeContainer {
+        page-break-after: always;
+    }
+}
+
+/* Prevent Text Overflow */
+.leftSection p, .leftSection a,
+.rightSection p, .rightSection a {
+    word-wrap: break-word;
+    word-break: break-word;
+}

@@ -1,0 +1,106 @@
+.cover-letter-builder {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  flex: 1;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+}
+
+.letter-preview {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #17a2b8;
+  outline: none;
+}
+
+.letter-content {
+  font-family: "Georgia", serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.letter-content p {
+  margin: 10px 0;
+}
+
+.download-button,
+.export-pdf-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-button:hover,
+.export-pdf-button:hover {
+  background-color: #127180;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .cover-letter-builder {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .input-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .letter-preview {
+    margin-top: 20px;
+  }
+}

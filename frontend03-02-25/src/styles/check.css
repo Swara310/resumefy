@@ -1,0 +1,141 @@
+/* Existing Testimonials Section Styling */
+.testimonials {
+  background-color: #f9fafc;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial span {
+  font-weight: bold;
+  color: #17a2b8;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+}
+
+/* New Press Room Section Styling */
+.press-room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.left-image,
+.right-image {
+  width: 500px; /* Adjust as needed */
+  height: auto;
+}
+
+.press-room-title {
+  margin: 0 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    max-width: 90%;
+  }
+
+  .press-room {
+    flex-direction: column; /* Stack images and text on smaller screens */
+    text-align: center;
+  }
+
+  .left-image,
+  .right-image {
+    width: 80%; /* Adjust for smaller screens */
+  }
+}
+/* Slider Row Animation */
+.slider_row {
+  animation: slidein 30s linear infinite !important;
+  white-space: nowrap;
+  display: flex; /* Ensure the images are arranged in a row */
+  justify-content: flex-start;
+}
+
+.fab {
+  width: calc(100% / 6); /* Adjust the width of each logo */
+  animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  margin: 0 20px;
+  display: inline-block;
+}
+
+/* Keyframe for Left-Side Moving Animation */
+@keyframes slidein {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left side */
+  }
+}
+
+/* Fade-in animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .slider_row {
+    animation: slidein 40s linear infinite; /* Slower animation on smaller screens */
+  }
+
+  .fab {
+    width: calc(100% / 4); /* Adjust image width for smaller screens */
+  }
+}

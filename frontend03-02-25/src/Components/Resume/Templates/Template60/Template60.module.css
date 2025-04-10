@@ -1,0 +1,107 @@
+/* Resume Container */
+.resumeContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+  }
+
+  /* Header Section */
+  .header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .profession {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+  }
+
+  .summary {
+    font-size: 14px;
+    color: #444;
+    margin-top: 10px;
+  }
+
+  /* Contact Section */
+  .contactSection {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .contactSection p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+
+  /* General Section Styling */
+  .section {
+    margin-top: 20px;
+  }
+
+  .section h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #444;
+  }
+
+  /* Job Experience */
+  .job {
+    margin-top: 15px;
+  }
+
+  .job h3 {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .job p {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .job ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+
+  .job ul li {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  /* Skills & Certifications */
+  .rightPanel {
+    margin-top: 20px;
+  }
+
+  .rightPanel .section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .rightPanel .section ul li {
+    font-size: 14px;
+    background: #f4f4f4;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: inline-block;
+  }

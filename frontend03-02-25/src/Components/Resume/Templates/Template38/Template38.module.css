@@ -1,0 +1,171 @@
+/* Resume Container */
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.resume {
+  width: 210mm;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+  margin-top: 5px;
+}
+
+.contactInfo {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 5px;
+}
+
+.contactInfo a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #222;
+  background-color: #e8e8e8;
+  padding: 8px;
+  margin: 15px 0;
+}
+
+/* Summary */
+p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Experience */
+.experienceItem {
+  margin-bottom: 10px;
+}
+
+.experienceItem strong {
+  font-size: 1rem;
+  color: #222;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+ul li {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.experienceTitle {
+  color: black; /* Ensures the title is black */
+  font-weight: bold;
+}
+
+/* Education */
+.educationItem {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #222;
+}
+
+.educationTitle {
+  color: black; /* Black color */
+  font-weight: bold; /* Bold font */
+}
+
+/* Skills */
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.skillList li {
+  background: #5b4f4f;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Achievements */
+.achievements ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.achievements li {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Projects */
+.project {
+  margin-top: 10px;
+}
+
+.project h4 {
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.project a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Bottom Line */
+.bottomLine {
+  margin-top: 20px;
+  border: none;
+  border-top: 2px solid #ddd;
+}

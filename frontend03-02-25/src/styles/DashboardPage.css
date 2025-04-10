@@ -1,0 +1,120 @@
+/* General Styling */
+.dashboard {
+  padding: 20px;
+  background-color: #f3f4f7;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.dashboard-header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Navigation Bar */
+.dashboard-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.dashboard-nav button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dashboard-nav button:hover {
+  background-color: #0056b3;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-section {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-section h2 {
+  margin-top: 0;
+  color: #007bff;
+  font-weight: 500;
+}
+
+/* Resume List */
+.resume-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.resume-list li span {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Analytics Overview */
+.analytics-overview p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header h1 {
+      font-size: 2rem;
+  }
+
+  .dashboard-nav {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .dashboard-nav button {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header h1 {
+      font-size: 1.8rem;
+  }
+
+  .dashboard-content {
+      padding: 10px;
+  }
+}

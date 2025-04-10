@@ -1,0 +1,218 @@
+/* Resume Container */
+.resumeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Resume */
+  .resume {
+    width: 800px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+  
+    margin-bottom: 20px;
+    background-color: #dfdede;
+  }
+  
+  .header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: #333;
+  }
+  
+  .title {
+    font-size: 18px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  /* Contact Info */
+  .contactInfo {
+    font-size: 14px;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  .contactInfo a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contactInfo a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styling */
+  .mainContent {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .leftColumn {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 2px solid #ddd;
+  }
+  
+  .rightColumn {
+    flex: 2;
+  }
+  
+  /* Section Titles */
+  h2 {
+    font-size: 20px;
+    color: #222;
+    border-bottom: 2px solid #0073b1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Lists */
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  /* Skills */
+  .skillsSection {
+    margin-bottom: 15px;
+  
+  }
+  
+  .skillList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    list-style: none;
+    padding: 0;
+  
+  }
+  
+  .skillList li {
+    background: #0073b1;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 3px;
+    font-size: 14px;
+  }
+  
+  /* Education & Achievements */
+  
+  .education strong{
+    font-size: 14px;
+    line-height: 1.5;
+    color:  #0073b1;
+  }
+  
+  .education p, .achievements ul {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+  }
+  
+  
+  
+  /* Experience & Projects */
+  .rightColumn section {
+    margin-bottom: 20px;
+  }
+  
+  .rightColumn strong {
+    font-size: 16px;
+    color: #0073b1;
+  }
+  
+  .project {
+    margin-bottom: 10px;
+  }
+  
+  .project h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .project a {
+    color: #0073b1;
+    text-decoration: none;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+  
+  .line {
+    margin: 20px 0;
+    border: none;
+    height: 10px;
+    background-color: black;
+  }
+  /* Horizontal Lines */
+  .bottomLine {
+    margin: 20px 0;
+    border: none;
+    height: 10px;
+    background-color: black;
+  }
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mainContent {
+      flex-direction: column;
+    }
+  
+    .leftColumn {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+  
+  /* PRINT STYLES */
+  @media print {
+    .resumeContainer {
+      padding: 0;
+      background-color: white;
+    }
+  
+    .resume {
+      width: 100%;
+      box-shadow: none;
+      padding: 20px;
+    }
+  
+    .mainContent {
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 30px !important;
+    }
+  
+    .leftColumn {
+      flex: 1;
+      padding-right: 20px;
+      border-right: 2px solid #ddd;
+    }
+  
+    .rightColumn {
+      flex: 2;
+    }
+  }

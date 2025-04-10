@@ -1,0 +1,107 @@
+.coverContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.coverPage {
+  width: 210mm;
+  height: 280mm;
+  background: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contactInfo span {
+  display: inline-block;
+}
+
+.contactInfo a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
+}
+
+.line {
+  width: 100%;
+  margin: 5px auto;
+  border: 1px solid black;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.leftColumn {
+  width: 40%;
+  text-align: left;
+}
+
+.leftColumn p {
+  margin: 5px 0;
+}
+
+/* Right Column */
+.rightColumn {
+  width: 80%;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-left: -20px;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  margin-bottom: 40px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.signature {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}

@@ -1,0 +1,290 @@
+/* Updated Navbar CSS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 55px 15px 20px !important; /* Adjusted padding to keep left side fixed and center right side */
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 550;
+  color: #1d1d10 !important;
+}
+
+.logo-image {
+  height: 30px;
+  width: auto;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-item {
+  position: relative;
+  margin-top: 5px !important;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #233143;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  margin-top: 10px !important;
+}
+
+.navbar-menu a:hover {
+  color: #0070d6;
+}
+
+/* Updated Dropdown Menu (Aligned to the Left) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -60%; /* Shifted to the left side */
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 10;
+  margin-top: 5px !important;
+}
+
+.dropdown-icon {
+  display: inline-block;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  margin-top: 5px !important;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
+  margin-top: 5px !important;
+}
+
+.navbar-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  color: #505050;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: normal;
+  transition: background-color 0.3s ease;
+  margin-top: 5px !important;
+}
+
+.dropdown-menu a:hover {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #f3f4f6;
+  color: #17a2b8;
+}
+
+.navbar-buttons .login-btn,
+.navbar-buttons .signup-btn {
+  padding: 6px 20px;
+  margin-top: 0px !important;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.navbar-buttons .login-btn {
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.navbar-buttons .login-btn:hover {
+  background-color: #e2e3e5;
+}
+
+.navbar-buttons .signup-btn {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.navbar-buttons .signup-btn:hover {
+  background-color: #138496;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-left: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+.dropdown-icon-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+/* Custom Dropdown Styles */
+.custom-dropdown {
+  /* background-color: #f3f4f6; */
+  border-radius: 8px;
+  /* padding: 10px 15px; */
+}
+
+.custom-button {
+  background-color: #2874f0;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #a5a5a5;
+}
+
+.custom-dropdown-menu {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Bold Styling for "New User? Sign up" */
+.bold-text {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Expanded Dropdown Menu */
+.custom-dropdown-menu {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 230px; /* Increased width to prevent text wrapping */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Change ONLY the hover color of the Login button */
+.login-btn:hover {
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.username-text {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  margin-top: 58px;
+  font-weight: bold;
+}
+
+.user-icon {
+  font-size: 28px;
+  margin-right: 0px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.logged-in-user {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.custom-dropdown-menu {
+  min-width: 250px; /* Increased width */
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 10px;
+  font-weight: 500;
+  color: #222;
+  cursor: default;
+}
+
+.user-icon {
+  font-size: 20px;
+}
+
+.user-name {
+  font-size: 14px;
+}
+
+

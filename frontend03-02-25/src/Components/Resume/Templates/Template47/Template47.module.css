@@ -1,0 +1,156 @@
+/* Resume Container */
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Resume Layout */
+.resume {
+  width: 800px;
+  background: white;
+  padding: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left; /* Ensures text aligns properly */
+}
+
+/* Header Section with Color */
+.header {
+  text-align: center;
+  background: #0056b3; /* Dark Blue Header */
+  color: white;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.title {
+  font-size: 18px;
+  color: #f0f0f0; /* Light Grey */
+  margin-bottom: 10px;
+}
+
+/* Contact Info */
+.contactInfo {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.contactInfo a {
+  color: #ffdd57; /* Yellow for contrast */
+  text-decoration: none;
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 22px;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+/* Experience */
+.experienceItem {
+  margin-bottom: 15px;
+}
+
+.experienceItem strong {
+  color: #222;
+  font-size: 16px;
+}
+
+.experienceItem ul {
+  margin-top: 5px;
+  padding-left: 20px; /* Fixes alignment */
+  padding-right: 0; /* Removes right shift */
+  list-style-position: inside; /* Ensures bullets align correctly */
+}
+
+/* Education */
+.educationItem {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Skills */
+.skillsSection {
+  margin-top: 20px;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.skillList li {
+  background: #0073b1;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Achievements */
+.achievements ul {
+  padding-left: 20px; /* Ensures left alignment */
+  padding-right: 0; /* Fixes right shift */
+  list-style-position: inside; /* Proper bullet alignment */
+}
+
+/* Projects */
+.project {
+  margin-bottom: 15px;
+}
+
+.project h4 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.project p {
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+.project a {
+  color: #0073b1;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Fix for all UL elements */
+ul {
+  padding-left: 20px; /* Ensures proper indentation */
+  padding-right: 0; /* Prevents right alignment */
+  text-align: left; /* Forces left alignment */
+  list-style-position: inside;
+}
+
+/* Bottom Line */
+.bottomLine {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin-top: 20px;
+}

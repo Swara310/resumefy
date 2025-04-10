@@ -1,0 +1,144 @@
+/* Resume Container */
+.resume-container {
+    display: flex;
+    max-width: 1000px;
+    background: #ffffff;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 12px;
+    text-align: left;
+    border: 2px solid #f1f1f1;
+  }
+
+  /* Left Panel */
+  .left-panel {
+    width: 65%;
+    padding-right: 20px;
+    border-right: 2px solid #f1f1f1;
+  }
+
+  .name {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0066cc;
+    font-weight: 600;
+  }
+
+  .summary {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #0066cc;
+    color: #333;
+  }
+
+  .job-title,
+  .degree-title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 0;
+    color: #333;
+  }
+
+  .date {
+    font-weight: 500;
+    color: #0066cc;
+    margin-bottom: 8px;
+  }
+
+  .institution {
+    font-size: 16px;
+    color: #555;
+  }
+
+  .job-list,
+  .info-list {
+    padding-left: 20px;
+  }
+
+  .job-list li,
+  .info-list li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+  }
+
+  /* Right Panel */
+  .right-panel {
+    width: 35%;
+    background-color: #003366;
+    padding-left: 20px;
+    color: #fff;
+    border-radius: 8px;
+  }
+
+  .contact-info {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .contact-info a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  .skill-category {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #ffcc00;
+  }
+
+  .skill-list {
+    padding-left: 20px;
+  }
+
+  .skill-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .certification-list {
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .certification-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .info-list li {
+    margin-bottom: 10px;
+  }
+
+  /* Adding some responsive adjustments */
+  @media (max-width: 768px) {
+    .resume-container {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+    .left-panel, .right-panel {
+      width: 100%;
+      padding: 15px;
+    }
+
+    .right-panel {
+      margin-top: 20px;
+    }
+  }

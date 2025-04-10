@@ -1,0 +1,145 @@
+/* Template64.module.css */
+
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: #e0e0e0;
+}
+
+.resume {
+  width: 800px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: #2b2f42;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.header p {
+  font-size: 14px;
+  font-style: italic;
+  color: #fff;
+}
+
+/* Contact Info */
+.contactInfo {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.contactInfo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contactInfo span {
+  margin-right: 8px;
+}
+
+/* Horizontal Line */
+.line {
+  border: none;
+  height: 2px;
+  background: #ccc;
+  margin: 15px 0;
+}
+
+/* Sections */
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #2b2f42;
+  border-bottom: 2px solid #2b2f42;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.experienceItem,
+.educationItem,
+.project {
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #2b2f42;
+}
+
+.educationTitle {
+  color: #000; /* Black color for title */
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #e8e8e8;
+  padding: 8px;
+  margin: 15px 0;
+}
+
+.educationTitle {
+  color: black; /* Black color */
+  font-weight: bold; /* Bold font */
+}
+
+.educationCollege {
+  color: #000; /* Black color for college name */
+  font-weight: bold;
+}
+
+.experienceTitle {
+  color: black; /* Ensures the title is black */
+  font-weight: bold;
+}
+
+/* Skills */
+.skillsSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillList li {
+  background: #8d99ae;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Achievements */
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Bottom Line */
+.bottomLine {
+  border: none;
+  height: 2px;
+  background: #2b2f42;
+  margin-top: 20px;
+}

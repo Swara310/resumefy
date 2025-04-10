@@ -1,0 +1,129 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  --theme-color: #1976d2;
+  background-color: #ffffff;
+}
+
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background-color: #fbdc6a;
+  padding: 0px;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--theme-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 20px;
+  color: white;
+  background: black;
+  padding: 0px;
+  display: inline-block;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  align-items: center;
+  background-color: #fbdc6a;
+  padding: 0px;
+}
+
+.socials p {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.socials a {
+  color: var(--theme-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.socials a:hover {
+  color: #ff4081;
+  transform: scale(1.1);
+}
+
+/* Section Styling */
+.section {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.section h3 {
+  font-size: 20px;
+  color: white;
+  background: black;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Skills & Languages Elliptical Styling */
+.skills,
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillContainer,
+.languageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillBubble,
+.languageBubble {
+  background: #666666;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.skillBubble:hover,
+.languageBubble:hover {
+  background: #000000;
+  transform: scale(1.05);
+}
+
+/* Numbered Lists */
+.section ol {
+  list-style-type: square;
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+.entry {
+  font-size: 23px;
+}
+
+.entry ol {
+  font-size: 18px;
+}

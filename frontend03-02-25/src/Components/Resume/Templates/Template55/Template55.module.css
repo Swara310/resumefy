@@ -1,0 +1,69 @@
+/* Ensure proper centering and alignment */
+.resume {
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: "Arial", sans-serif;
+    color: #333;
+    line-height: 1.6; /* Improves readability */
+  }
+
+  /* Section Titles - Spacing */
+  /* Skills Section */
+  .skillList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .skill {
+    background-color: #004a8d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  /* Improved Work Experience and Education Blocks */
+  .experienceItem, .educationItem, .projectItem {
+    margin-top: 12px;
+    padding: 12px;
+    border-left: 4px solid #004a8d;
+    background: #f8f8f8;
+    padding-left: 18px; /* Improved spacing */
+  }
+
+  /* Resume Header - Better Padding */
+  .header {
+    text-align: center;
+    background-color: #004a8d;
+    color: white;
+    padding: 25px; /* Slightly increased padding */
+    border-radius: 5px;
+  }
+
+  /* Contact Information */
+  .contactInfo {
+    font-size: 14px;
+    color: white;
+    margin-top: 5px;
+  }
+  /* Ensure all text inside the header is white */
+  .header, 
+  .header a, 
+  .header h1, 
+  .header h2, 
+  .header .contactInfo {
+    color: white !important;
+    text-decoration: none; /* Removes underline from links */
+  }
+
+  /* If you want links to stay white even when hovered */
+  .header a:hover {
+    color: white !important;
+    text-decoration: underline; /* Optional for better visibility */
+  }

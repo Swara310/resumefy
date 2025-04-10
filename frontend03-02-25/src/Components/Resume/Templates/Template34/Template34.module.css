@@ -1,0 +1,173 @@
+.resume-container {
+  display: flex;
+  max-width: 900px;
+  /* background: #ff0000; */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.63);
+  padding: 10px;
+  margin: auto;
+  border-radius: 15px;
+  text-align: left;
+}
+
+/* Left Panel */
+.left-panel {
+  width: 65%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 18px;
+  border-right: 2px solid #ddd;
+  background-color: #799acc;
+  padding-bottom: 15px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.name {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #2a56c6;
+  font-weight: bold;
+}
+
+.summary {
+  font-size: 16px;
+  color: #252525;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  border-bottom: 2px solid #2a56c6;
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.point-list {
+  color: #222222;
+}
+
+.job-title,
+.project-title,
+.degree-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.date {
+  font-weight: bold;
+  color: #2a56c6;
+  margin-bottom: 5px;
+}
+
+.institution {
+  font-size: 16px;
+  color: #222222;
+}
+
+.job-list,
+.skill-list,
+.certification-list,
+.info-list {
+  padding-left: 20px;
+}
+
+.job-list li {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+/* Right Panel */
+.right-panel {
+  width: 35%;
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-top: 5px;
+  background-color: #0e0e0e;
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+
+  /* margin-bottom: 0px; */
+}
+
+.contact-info {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.contact-info a {
+  color: #2a56c6;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.skill-list li,
+.certification-list li,
+.info-list li {
+  font-size: 16px;
+  /* color: #555; */
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.info-list li {
+  text-align: left;
+  color: #ffffff;
+}
+
+/* .skill-category {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.skills ul {
+  padding-left: 20px;
+}
+
+.skills li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+} */
+/* Add this to your stylesheet */
+.skill-item {
+  position: relative;
+  display: inline-block;
+  color: #000000;
+  padding: 7px 14px;
+  font-size: 16px;
+  background-color: #b5e1ff;
+  border-radius: 9px;
+  margin-right: 10px; /* Added gap between items */
+  margin-bottom: 10px; /* Added vertical gap */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgb(0, 255, 136);
+  gap: 10px;
+}
+
+.skill-item:hover::before {
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}

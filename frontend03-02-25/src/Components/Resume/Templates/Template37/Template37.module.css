@@ -1,0 +1,196 @@
+@import "../multiPage.css"; /* Import global multipage handling */
+
+.resume {
+  display: flex;
+  width: 210mm;
+  background: white;
+  font-size: 12px;
+  position: relative;
+}
+
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.resumeWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 210mm;
+  min-height: 297mm;
+  background: white;
+  font-size: 12px;
+  position: relative;
+}
+
+
+/* Left Sidebar */
+.leftPanel {
+
+  width: 30%;
+  left: 20px;
+  top: 20px; /* Slightly lowered for overlay effect */
+  background-color: var(--theme-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hexagon Shape */
+.hexagon {
+  width: 100px;
+  height: 110px;
+  background-color: #ffffff;
+  color: var(--theme-color);
+  clip-path: ellipse(48% 30% at 50% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon::before {
+  bottom: 100%;
+  border-bottom: 30px solid white;
+}
+
+.hexagon::after {
+  top: 100%;
+  border-top: 30px solid white;
+}
+
+.contact p{
+  color: #ffffff;
+}
+
+/* Right Panel */
+.rightPanel {
+  width: 70%;
+  padding: 20px;
+}
+
+/* Name Strip */
+.nameStrip {
+  background-color: #d3d3d3;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+/* Cursive Section Titles */
+.sectionTitle {
+  font-family: cursive;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+  margin-bottom: 8px;
+}
+
+.rightPanel p {
+  color: black;
+}
+
+.leftPanel p {
+  color: rgb(255, 255, 255);
+}
+
+
+.justified {
+  text-align: justify;
+}
+
+
+
+/*page break code snippet i used to break pages equally @Nikhil*/
+
+
+/* Ensure new pages start properly */
+.page-break {
+  page-break-before: always;
+  break-before: page;
+}
+
+/* Prevent Section Splitting */
+.section {
+  page-break-inside: avoid;
+}
+
+/* Multi-Page Handling */
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0.25in;
+  }
+
+  .resumeContainer {
+    page-break-before: auto;
+    page-break-after: always;
+  }
+
+  .resume {
+    width: 210mm;
+    height: 297mm;
+    display: flex;
+    page-break-inside: avoid;
+    padding: 6.35mm;
+  }
+
+  /* Left Panel - Keep Styling but Hide Content on New Pages */
+.leftPanel {
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  background-color: var(--theme-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  left: 0;
+  top: 0;
+}
+
+/* Hide the left panel content on all pages except the first */
+.resume:not(:first-of-type) .leftPanel * {
+  visibility: hidden; /* This hides all content in the left panel on subsequent pages */
+}
+
+/* Ensure the left panel's background is visible */
+.resume:not(:first-of-type) .leftPanel {
+  visibility: visible; /* This keeps the left panel's background visible */
+}
+
+/* Right Panel should not overlap with the fixed left panel */
+.rightPanel {
+  width: 70%;
+  padding: 20px;
+  margin-left: 30%; /* Ensure it starts after the left panel */
+}
+
+/* Prevent Sections from Duplicating */
+.resume:not(:first-of-type) .rightPanel {
+  display: contents; /* This ensures the right panel's content is not duplicated */
+}
+
+/* Ensure new pages start properly */
+.page-break {
+  page-break-before: always;
+  break-before: page;
+}
+
+/* Avoid Section Splitting */
+.section {
+  page-break-inside: avoid;
+}
+}

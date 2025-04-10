@@ -1,0 +1,80 @@
+.resume {
+    width: 210mm;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    --theme-color: #283593;
+    font-size: 12px; /* Compact text */
+  }
+  
+  .resumeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+
+  .header {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--theme-color);
+  }
+  
+  /* Section */
+  .section {
+    margin-bottom: 10px;
+  }
+  
+  .sectionTitle {
+    background-color: var(--theme-color);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+   /* display: inline-block;*/
+  /* border-radius: 4px;*/
+    margin-bottom: 5px;
+  }
+  
+  /* Table Styling */
+  .educationTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  
+  .educationTable th,
+  .educationTable td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  .educationTable th {
+    font-weight: bold;
+  }
+  
+  /* Work Experience & Projects */
+  .workItem,
+  .projectItem {
+    margin-bottom: 5px;
+  }
+  
+  /* Skills & Languages */
+  .section p strong {
+    color: var(--theme-color);
+    font-weight: bold;
+  }
+  
+  /* Achievements & Others */
+  .section p {
+    margin: 2px 0;
+  }
+  
