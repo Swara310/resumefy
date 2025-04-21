@@ -83,13 +83,14 @@ const Login = () => {
         { headers: { "Content-Type": "application/json" } }
       );
 
-      const { token, name } = response.data;
+      const { token, user } = response.data;
 
       localStorage.setItem("authToken", token);
-      if (name) {
-        localStorage.setItem("userName", name);
-        window.dispatchEvent(new CustomEvent("userLoggedIn", { detail: name })); //This line updates the UI
+      if (user?.name) {
+        localStorage.setItem("userName", user.name);
+        window.dispatchEvent(new CustomEvent("userLoggedIn", { detail: user.name }));
       }
+      
       Swal.fire({
         icon: "success",
         title: "Login Successful",
