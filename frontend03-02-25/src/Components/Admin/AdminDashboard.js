@@ -37,18 +37,18 @@ const AdminDashboard = () => {
         <div className="users-list">
           {users.map((user) => (
             <div className="user-card" key={user._id}>
+             {user.profilePicture && (
+                 <div className="profile-picture-url">
+                   <span className="label">Profile Picture:</span>{" "}
+                   <img  src={user.profilePicture}  alt="Profile"  style={{ width: '50px', height: '50px', objectFit: 'cover', borderRadius: '8px' }}/>
+                </div>
+              )}
               <p><span className="label">Name:</span> {user.name}</p>
               <p><span className="label">Email:</span> {user.email}</p>
               
               {user.phone && (
                 <p><span className="label">Phone:</span> {user.phone}</p>
               )}
-
-                   {user.profilePicture && (
-                      <p className="profile-updated-msg">✅ Profile Picture Updated</p>
-                  )}
-
-
               <p><span className="label">Created At:</span> {new Date(user.createdAt).toLocaleString()}</p>
               <p><span className="label">Updated At:</span> {new Date(user.updatedAt).toLocaleString()}</p>
 
